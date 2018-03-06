@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,18 +7,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Generic_Entity_CRUD.Model
 {
     /// <summary>
-    /// A row that is identified by an string key
+    /// A row that is identified by an int key
     /// </summary>
-    public interface IKeyRow : IRow<string>
+    public interface IIdentified : IEntity<int>
     {
         /// <summary>
-        /// Textual primary key.
+        /// Integer primary key.
         /// </summary>
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        new string ID
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        new int ID
         {
             get;
             set;
         }
     }
+
 }

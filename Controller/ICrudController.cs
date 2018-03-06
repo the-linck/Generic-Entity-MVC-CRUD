@@ -13,7 +13,7 @@ namespace Generic_Entity_CRUD
     /// <param name="TEntity">Database entity in wich this controller will act</param>
     /// </summary>
     public interface ICrudController<TEntity, TKey>
-    where TEntity : class, IRow<TKey>
+    where TEntity : class, IEntity<TKey>
     {
         #region Create
             /// <summary>

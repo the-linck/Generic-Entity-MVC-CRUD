@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Generic_Entity_CRUD.Model;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -15,8 +16,8 @@ namespace Generic_Entity_CRUD
     /// Base class for using generic CRUD in MVC patter, encapsulatting database logic in fast operations.
     /// <param name="TEntity">Database entity in wich this controller will act</param>
     /// </summary>
-    public abstract class CrudController<TEntity, TKey>
-    where TEntity : class, IRow<TKey>
+    public abstract class CrudController<TEntity, TKey> : Controller, ICrudController<TEntity, TKey>
+    where TEntity : class, IEntity<TKey>
     {
         /// <summary>
         /// If changes on the database will be saved automatically.

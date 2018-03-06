@@ -7,7 +7,7 @@ namespace Generic_Entity_CRUD.Model
     /// <summary>
     /// Standart interface to represent a row in a table.
     /// </summary>
-    public interface IRow<TKey>
+    public interface IEntity<TKey>
     {
         /// <summary>
         /// Primary key.
