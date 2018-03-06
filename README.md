@@ -33,4 +33,4 @@ All files are very documented with C#'s XML comments,  there's no hidden functio
 
 ## Tests
 
-We're implementing some tools to test the library and it's releases, but the project is in it's very begining yet - the crative phase, we can say.
+We're implementing some tools to test the library and it's releases, but the project is in it's very begining yet - the creative phase, we can say.
