@@ -15,7 +15,7 @@ As said before, we follow MVC pattern. So, the classes and interfaces come in th
     * **Model**
         * **IEntity**  
         Base interface for any entity in the models (internal use)
-        * **IEntity<TEntity>**  
+        * **IEntity&lt;TEntity&gt;**  
         Generic interface for any entity in the models
         * **IIdentified**  
         Interface for entites with integer primary key
@@ -24,9 +24,9 @@ As said before, we follow MVC pattern. So, the classes and interfaces come in th
         * **IDated**  
         Interface for entites with creation and update date
     * **Controller**
-        * **ICrudController<TEntity>**  
+        * **ICrudController&lt;TEntity&gt;**  
         Generic interface that defines the avaliable CRUD method and their signatures
-        * **CrudController<TEntity>**  
+        * **CrudController&lt;TEntity&gt;**  
         Abstract Controller class that implements the CRUD functionality and exposes it to descendants 
 
 ## Documentation
