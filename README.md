@@ -14,6 +14,8 @@ As said before, we follow MVC pattern. So, the classes and interfaces come in th
 * **Generic_Entity_CRUD**  
     * **Model**
         * **IEntity**  
+        Base interface for any entity in the models (internal use)
+        * **IEntity<TEntity>**  
         Generic interface for any entity in the models
         * **IIdentified**  
         Interface for entites with integer primary key
@@ -22,9 +24,9 @@ As said before, we follow MVC pattern. So, the classes and interfaces come in th
         * **IDated**  
         Interface for entites with creation and update date
     * **Controller**
-        * **ICrudController**  
+        * **ICrudController<TEntity>**  
         Generic interface that defines the avaliable CRUD method and their signatures
-        * **CrudController**  
+        * **CrudController<TEntity>**  
         Abstract Controller class that implements the CRUD functionality and exposes it to descendants 
 
 ## Documentation
@@ -33,4 +35,4 @@ All files are very documented with C#'s XML comments,  there's no hidden functio
 
 ## Tests
 
-We're implementing some tools to test the library and it's releases, but the project is in it's very begining yet - the crative phase, we can say.
+We're implementing some tools to test the library and it's releases, but the project is in it's very begining yet - the creative phase, we can say.

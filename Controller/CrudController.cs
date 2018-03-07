@@ -16,8 +16,8 @@ namespace Generic_Entity_CRUD
     /// Base class for using generic CRUD in MVC patter, encapsulatting database logic in fast operations.
     /// <param name="TEntity">Database entity in wich this controller will act</param>
     /// </summary>
-    public abstract class CrudController<TEntity, TKey> : Controller, ICrudController<TEntity, TKey>
-    where TEntity : class, IEntity<TKey>
+    public abstract class CrudController<TEntity> : Controller, ICrudController<TEntity>
+    where TEntity : class, IEntity
     {
         /// <summary>
         /// If changes on the database will be saved automatically.

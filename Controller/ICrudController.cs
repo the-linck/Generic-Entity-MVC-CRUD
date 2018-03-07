@@ -12,8 +12,8 @@ namespace Generic_Entity_CRUD
     /// Specifies the CRUD operation methods, with their variations.
     /// <param name="TEntity">Database entity in wich this controller will act</param>
     /// </summary>
-    public interface ICrudController<TEntity, TKey>
-    where TEntity : class, IEntity<TKey>
+    public interface ICrudController<TEntity>
+    where TEntity : class, IEntity
     {
         #region Create
             /// <summary>
