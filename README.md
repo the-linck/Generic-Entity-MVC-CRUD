@@ -15,7 +15,7 @@ As said before, we follow MVC pattern. So, the classes and interfaces come in th
     * **Model**
         * **IEntity**  
         Base interface for any entity in the models (internal use)
-        * **IEntity&lt;TEntity&gt;**  
+        * **IEntity&lt;TKey&gt;**  
         Generic interface for any entity in the models
         * **IIdentified**  
         Interface for entites with integer primary key
