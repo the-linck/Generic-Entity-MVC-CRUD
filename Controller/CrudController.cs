@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Generic_Entity_CRUD.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 
 

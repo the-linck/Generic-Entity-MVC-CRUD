@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Generic_Entity_CRUD.Model;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Generic_Entity_CRUD
 {
